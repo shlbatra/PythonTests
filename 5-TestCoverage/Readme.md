@@ -1,0 +1,13 @@
+- Unit Test and Coverage
+- Coverage - measure of how much of your code is tested (%)
+- test fixture - env or context in which your code runs. ex fake dataset, mock or stop object that help you single out single piece of code, Ex. email enter -> go to database and send email -> mock email sending service (test without sending actual email) 
+- unit tests more extensive than the app code
+- python library for testing -> unittest, pytest
+- pip install coverage ; coverage run <test file name>, get html report -> coverage html
+- 1 -> Write code and then write unit tests
+- 2 -> Test driven development, Write tests before implementation. As code, the test go from Fail to Pass. Define what expect of fn via test and just doing test passing for implementation.
+- Coverage of 100% doesnt mean code is bug free
+- Random data in unit test -> not good idea, unit test deterministic. Not use unit test as deployment stratergy -> some time code pass and some times fail -> no idea as using random data. 
+- force to write code that is easy to test
+- Strong Cohesion, Less Coupling, Single Responsibility -> Easy to test
+- 

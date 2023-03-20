@@ -1,0 +1,31 @@
+- Software Testing
+    - Process of verifying software app is working as expected 
+    - if you set up tests properly then gives insight into quality of software
+    - diff types, levels and views on testing
+- Tests are not ?
+    - Guarantee that program is correct
+    - show presence of bugs but not absence
+- Prove program is correct using tests ?
+    - Using Hoare logic 
+    - Triple -> describes how execution of piece of code changes state 
+    - Form of triple -> {P}C{Q}  => Generic representation of unit test
+    P=precondition(state before ran code), C=computation, Q=postcondition(state after ran code)
+    - provide range of cases with math expressions and prove input output is correct
+    - nowadays, hard to prove correctness of program based on logic due to complexity of code bases. 
+    - use unit test nowadays -> grasp part of code works
+- Dyanmic Testing -> Unit test or testing approach where run with predefined use cases, provide input and verify output matches as expected. you define inputs and outputs
+- Static Testing ->  no test cases, but involves thinks like code reviews, syntax and type checking by ide
+- Passive Testing -> side effects of code, log files generated, databases that will be filled -> check for anomolies
+- White box testing -> Assume knowledge of inner working of code,ex. Unit test, mutation testing -> modify source code of prorgam and see test pick minor changes, ex. off by 1 mistake. loop run till n-1 or n. library for mutation test -> modmod  -> follow hoare logic
+- Black box testing -> no knowledge of inner working of code, look at what software does ex. Snapshot testing -> take snapshot of 
+system before and after command executed and compare the two,  Ex. compare html and css app produces. React Jest library
+- Invariant -> logical assertion that is always held to be true for certain phase of computation. Ex. loop invariant -> index never less than 0 , define property to be true -> test for the property for wide inputs 
+- Property based testing -> hypothesis library, measure if property holds and not care about value (inputs), you can test using random numbers
+    - Bilbo testing - apply transformation to number and then apply reverse of the transformation. 
+    - Verify something wont change ex. list length not change after sorting
+    - things hard to prove but easy to verify.  Ex- data processing fn gives dict with fields -> check none of fields empty. property testing that dict not include any empty fields - test with random data 
+    - property can say about output. 
+- Higher Level testing process
+    - integration testing
+    - exception testing
+    - require DTAP (Dev, Testing, Acceptable, Prod)

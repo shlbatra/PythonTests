@@ -1,0 +1,9 @@
+- Write tests properly
+- good test for updates and refactoring confidence
+- everything still working after make changes to specific part of code/functionality
+- Unit test assert methods link ->
+    - https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug
+- Best Practices
+    - Tests should be isolated -> not rely or affect other tests
+    - test driven development -> write test before writing code (think what code do, write test for behaviour, fail test, write code to succeed that test)
+    - pi test -> another version of testing instead of unittests
